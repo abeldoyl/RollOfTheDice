@@ -1,4 +1,11 @@
-﻿namespace RollOfTheDice
+﻿/*
+Abel Doyle
+RCET 2265
+Spring Semester 2026
+ConvertandValidate
+https://github.com/abeldoyl/RollOfTheDice.git
+*/
+namespace RollOfTheDice
 {
     internal class Program
     {
