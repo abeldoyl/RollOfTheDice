@@ -15,10 +15,19 @@
 
                 counts[sum]++;
             }
-            Console.WriteLine("Roll Of The Dice".PadLeft(165));
-            Console.WriteLine("  2  |   3  |   4  |   5  |   6  |   7  " +
-                "|   8  |   9  |  10  |  11  |  12  "); // column headers
-            Console.WriteLine((new string('-', 75))); // row separator
+            Console.WriteLine("Roll Of The Dice".PadLeft(170));
+            Console.WriteLine((new string('-', 80))); // row separator
+            for (int i = 2; i <= 12; i++)
+            {
+                Console.Write($"{i,5}".PadLeft(5)+ " |"); // dice result options 2-12
+            }
+            Console.WriteLine();
+            Console.WriteLine((new string('-', 80))); // row separator
+
+            for (int i = 2; i <= 12; i++)
+            {
+                Console.Write($"{counts[i],5}".PadLeft(5)+ " |"); // dice results data
+            }
 
             //pause
             Console.Read();
